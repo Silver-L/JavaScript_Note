@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript toturist</title>
+</head>
+<body>
+  <script>
+    /*
+        ループ処理
+        for
+
+        break ループ処理を抜ける
+        continue ループ処理を１回スキップ
+    */
+/*
+    var i = 0;
+    while (i < 10){
+      console.log(i);
+      i++;
+    }
+*/
+
+// ver.1
+    for (var i =0; i < 10; i++){
+      if (i === 5){
+        //break
+        break;
+      }
+      console.log(i);
+    }
+
+// ver.2
+  for (var i =0; i < 10; i++){
+    if (i === 5){
+      //break
+      continue;
+    }
+    console.log(i);
+  }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript toturist</title>
+</head>
+<body>
+  <script>
+    /*
+        タイマー処理
+            setInterval
+            setTimeout
+    */
+
+    // ver.1
+    /*
+    var i = 0;
+    function show() {
+        console.log(i++);
+        setTimeout(function() {
+            show();
+        }, 1000);
+    }
+    show();
+    */
+
+    // ver.2
+    var i = 0;
+    function show() {
+        console.log(i++);
+        var tid = setTimeout(function() {
+            show();
+        }, 1000);
+        if (i > 3){
+          clearTimeout(tid);
+        }
+    }
+    show();
+
+  </script>
+</body>
+</html>
